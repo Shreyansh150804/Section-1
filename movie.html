@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: rgb(16, 15, 94);
+            font-family: Arial, sans-serif;
+        }
+
+        .card {
+            width: 100%;
+            max-width: 500px;
+            background: white;
+            border: 3px solid black;
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .form-title {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+
+        .btn-submit {
+            width: 100%;
+            padding: 12px;
+            background-color: rgb(16, 15, 94);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .text-input,
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+
+        <h2 class="form-title">Movie Ticket Application Form</h2>
+        <form>
+            <label for="">Search for Movies</label>
+
+            <input class="text-input" type="text" list="Movies" placeholder="Select a Movie">
+
+            <datalist id="Movies">
+                <option>Dhurandhar 1</option>
+                <option>Obsession</option>
+                <option>Michael</option>
+                <option>Dhurandhar 2</option>
+                <option>Endgame</option>
+
+
+            </datalist>
+            <br>
+            <br>
+            <label for="">Movie Booking Date</label>
+            <input class="text-input" type="date">
+            <br>
+            <br>
+            <label for="">Available Time Slot</label>
+            <br>
+            <br>
+            <input type="radio"> 10:30 AM
+            <input type="radio"> 2:30 PM
+            <input type="radio"> 9:30 PM
+
+            <br>
+            <br>
+            <label for="">Number of Tickets</label>
+            <input class="text-input">
+            <br>
+            <br>
+            <label for="">Email</label>
+            <input class="text-input" type="email">
+            <br>
+            <br>
+            <button class="btn-submit">Book Now</button>
+            <br>
+            <br>
+        </form>
+    </div>
+
+
+</body>
+
+</html>
